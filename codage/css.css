@@ -1,0 +1,475 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+
+}
+
+body{
+padding: 0;
+margin: 0;
+background: lightgoldenrodyellow;;
+
+
+
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+nav{
+display: grid;
+grid-template-columns: 10% 80% 10%;
+grid-template-rows: 100%;
+
+}
+
+header{
+
+    background:rgb(31, 42, 54);
+    position: relative;
+    font-weight: bold;
+    width: 100%;
+    z-index: 1;
+}
+
+header nav ul{
+list-style: none;
+display: flex ;
+justify-content: center;
+align-items: center;
+
+
+
+
+}
+
+
+
+
+.grid1{
+
+  grid-column: 1/2;
+  grid-row: 1;
+
+}
+
+.grid2{
+ grid-column: 1/4;
+ grid-row: 1;
+ position: relative;
+
+
+
+
+}
+
+.grid3{
+
+  grid-column: 3/4 ;
+  grid-row: 1;
+
+}
+
+
+
+.heartdad{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  
+
+}
+
+.heart{
+
+  color: gold;
+  font-size: 50px;
+  transition: transform 2s;
+  transform: scale(1);
+
+
+}
+
+.responsive{
+  visibility: hidden;
+  position: absolute;
+  color: gold;
+  font-size: 40px;
+}
+
+.heart:hover{
+  transition: transform 2s;
+  transform: scale(1.5);
+
+}
+
+.menu{
+padding: 5px;
+text-align: center;
+
+
+}
+
+.lien{
+
+background: gold;
+width: 200px;
+margin: 0px 10px;
+padding: 10px 0px;
+opacity: 0.60;
+border: solid transparent;
+
+
+}
+.lien:hover{
+
+  opacity: 100;
+  transition:opacity 2s;
+  transition : scale(1.1);
+ 
+  border: solid white;
+
+  color: white;
+  
+
+    
+    }
+    .iconlien{
+
+font-size: 20px;
+position: absolute;
+left: 5%;
+
+
+    }
+
+.absolute{
+position: relative;
+
+    }
+
+    nav ul a:active{
+
+      transform: scale(0.9);
+
+}
+
+article{
+
+ min-height:100vh ;
+
+
+  
+}
+
+.img1{
+
+  height: 80vh;
+  width: 100%;
+  background: bottom / cover fixed  ;
+background-image: url(Voyage.jpg);
+box-shadow: 0px 0px 15px black;
+
+
+
+}
+.img2{
+
+  height: 80vh;
+  width: 100%;
+  background: center / cover fixed  ;
+background-image: url(declaration2.png);
+box-shadow: 0px 0px 15px black;
+
+}
+
+.img3{
+
+  height: 80vh;
+  width: 100%;
+  background: center / cover fixed  ;
+background-image: url(Souvenir.jpg);
+box-shadow: 0px 0px 15px black;
+
+}
+.img4{
+
+  height: 100vh;
+  width: 100%;
+  background-size: 100% 100%;
+background-image: url(anniversaire.png) ;
+box-shadow: 0px 0px 15px black;
+background-color: white;
+
+
+}
+
+.text{
+
+  background: white;
+text-align: center;
+margin: 5% 10%;
+font-size: 40px;
+padding: 15px;
+border: double 5px gold;
+margin-bottom: 10%;
+
+}
+
+.poeme{
+
+  border: ridge 10px gold;
+  margin: 5% 10%;
+
+  font-family: fantasy;
+  text-align: center;
+  background: white;
+
+
+
+}
+
+pre{
+  padding: 0px;
+}
+
+
+.poeme h3{
+
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+
+.date{
+  font-size: 12px;
+  margin: 15px  0;
+
+}
+
+
+@media only screen and (max-width: 800px){
+
+
+.grid1{
+   
+  visibility: hidden;
+
+}
+.grid2{
+
+
+  position: absolute;
+  display: grid;
+  top: 60px;
+  left: -10px;
+  transform: translatex(-150%);
+
+
+
+}
+.lien{
+
+ opacity: 1;
+ background-color: gold;
+
+}
+
+.lien:active{
+  transform: scale(1);
+}
+
+.grid3{
+
+  grid-column: 2/4;
+
+}
+
+.responsive{
+  visibility: visible;
+  position: relative;
+  grid-column: 1/2;
+  grid-row: 1;
+
+}
+.responsive:hover{
+  color: white;
+  transition: color 0.5s;
+
+
+}
+
+.responsive:active{
+
+  transform: scale(0.8);
+}
+
+h1{
+  font-size: 30px;
+}
+
+.poeme h3{
+
+  font-size: 20px;
+}
+pre{
+
+  font-size: 10px;
+
+
+}
+
+.date{
+  font-size: 12px;
+  margin: 10px  0;
+}
+
+
+
+.img1{
+
+  height: 80vh;
+  width: 100%;
+  background: center / cover   ;
+background-image: url(Voyage.jpg);
+box-shadow: 0px 0px 15px black;
+z-index: -2;
+
+
+}
+.img2{
+
+  height: 50vh;
+  width: 100%;
+  background: center / cover   ;
+background-image: url(declaration2.png);
+box-shadow: 0px 0px 15px black;
+
+}
+
+.img3{
+
+  height: 50vh;
+  width: 100%;
+  background: center / cover  ;
+background-image: url(Souvenir.jpg);
+box-shadow: 0px 0px 15px black;
+
+}
+.img4{
+
+  height: 95vh;
+  width: 100%;
+  background:  bottom/ cover ;
+background-image: url(anniversaire.png) ;
+box-shadow: 0px 0px 15px black;
+background-color: white;
+
+
+}
+
+}
+
+@media only screen and (max-width: 625px){
+
+  pre{
+    font-size: 7px;
+  }
+
+  .date{
+    font-size: 9px;
+  }
+  
+
+  .img1{
+
+    height: 50vh;
+    width: 100%;
+background-position: 23% top;
+background-size: cover;
+background-repeat: no-repeat;
+  background-image: url(Voyage.jpg);
+  box-shadow: 0px 0px 15px black;
+  z-index: -2;
+  
+  
+  }
+  .img2{
+  
+    height: 50vh;
+    width: 100%;
+    background: center / cover   ;
+  background-image: url(nuit1.jpg);
+  box-shadow: 0px 0px 15px black;
+  
+  }
+  
+  .img3{
+  
+    height: 50vh;
+    width: 100%;
+    background: center / cover  ;
+  background-image: url(Souvenir.jpg);
+  box-shadow: 0px 0px 15px black;
+  
+  }
+  .img4{
+  
+    height: 80vh;
+    width: 100%;
+    background: bottom / cover ;
+  background-image: url(anniversaire.png) ;
+  box-shadow: 0px 0px 15px black;
+  background-color: white;
+  
+  
+  }
+
+
+  .poeme h3{
+    font-size: 15px;
+  }
+
+
+}
+
+@media only screen and (max-width: 425px){
+
+  .poeme{
+    margin: 5% 5%;
+  }
+
+  .img4{
+  
+    height: 60vh;
+    width: 100%;
+    background: left / cover ;
+  background-image: url(acceuil.png) ;
+  box-shadow: 0px 0px 15px black;
+}
+
+
+
+/*header nav ul{
+    display: flex;
+  
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 5px;
+    margin: 0 4px;
+  width: 100px;
+    background-color: white;
+  }
